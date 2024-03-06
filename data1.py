@@ -1,10 +1,8 @@
-import RPi.GPIO as GPIO
-import time
+import l293d
 
-motoRPin1=13
-motoRPin2=11
-enablePin=15
+motor1 = l293d.DC(22,18,16)
+motor2 = l293d.DC(15,11,13)
 
-def setup():
-    GPIO.setmode(GPIO.BOARD)
-    GPIO.setup(motoRPin1)
+while True:
+    motor1.clockwise(speed=50,duration=5)
+    
