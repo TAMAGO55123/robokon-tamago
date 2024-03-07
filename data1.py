@@ -63,12 +63,12 @@ def motorstop(motor):
 while True:
 
     motor(1,0,motor1_speed)
-    sleep(5)
+    sleep(7)
     motorstop(1)
     sleep(0.5)
 
     motor(1,1,motor1_speed)
-    sleep(5)
+    sleep(7)
     motorstop(1)
     sleep(1)
 
@@ -84,14 +84,14 @@ while True:
 
     motor(1,0,motor1_speed)
     motor(2,1,motor2_speed)
-    sleep(5)
+    sleep(7)
     motorstop(1)
     motorstop(2)
     sleep(0.5)
 
     motor(1,1,motor1_speed)
     motor(2,0,motor2_speed)
-    sleep(5)
+    sleep(7)
     motorstop(1)
     motorstop(2)
     sleep(1)
