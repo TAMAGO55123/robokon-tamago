@@ -13,7 +13,7 @@ motor1_speed=40
 motor2_1=17
 motor2_2=27
 enable2=22
-motor2_speed=30
+motor2_speed=40
 
 button=21
 
