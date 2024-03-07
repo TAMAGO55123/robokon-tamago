@@ -3,6 +3,8 @@ from time import sleep
 
 GPIO.setmode(GPIO.BCM)
 
+GPIO.setwarnings(False)
+
 motor1_1=23
 motor1_2=24
 enable1=25
