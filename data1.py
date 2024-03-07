@@ -1,17 +1,17 @@
 import RPi.GPIO as GPIO
 from time import sleep
 
-GPIO.setmode(GPIO.BOARD)
+GPIO.setmode(GPIO.BCM)
 
-motor1_1=18
-motor1_2=20
-enable1=24
+motor1_1=23
+motor1_2=24
+enable1=25
 
-motor2_1=11
-motor2_2=13
-enable2=15
+motor2_1=17
+motor2_2=27
+enable2=22
 
-button=40
+button=21
 
 GPIO.setup(motor1_2,GPIO.OUT)
 GPIO.setup(motor1_1,GPIO.OUT)
@@ -84,7 +84,7 @@ while True:
         motorstop(1)
         motorstop(2)
         sleep(0.5)
-        
+
         motor(1,0,50)
         motor(2,0,40)
         sleep(3)
