@@ -8,10 +8,12 @@ GPIO.setwarnings(False)
 motor1_1=23
 motor1_2=24
 enable1=25
+motor1_speed=50
 
 motor2_1=17
 motor2_2=27
 enable2=22
+motor2_speed=40
 
 button=21
 
@@ -60,35 +62,35 @@ def motorstop(motor):
 
 while True:
 
-    motor(1,1,50)
+    motor(1,1,motor1_speed)
     sleep(3)
     motorstop(1)
     sleep(0.5)
 
-    motor(1,0,50)
+    motor(1,0,motor1_speed)
     sleep(3)
     motorstop(1)
     sleep(1)
 
-    motor(2,1,40)
+    motor(2,1,motor2_speed)
     sleep(3)
     motorstop(2)
     sleep(0.5)
 
-    motor(2,0,40)
+    motor(2,0,motor2_speed)
     sleep(3)
     motorstop(2)
     sleep(2)
 
-    motor(1,1,50)
-    motor(2,1,40)
+    motor(1,1,motor1_speed)
+    motor(2,1,motor2_speed)
     sleep(3)
     motorstop(1)
     motorstop(2)
     sleep(0.5)
 
-    motor(1,0,50)
-    motor(2,0,40)
+    motor(1,0,motor1_speed)
+    motor(2,0,motor2_speed)
     sleep(3)
     motorstop(1)
     motorstop(2)
