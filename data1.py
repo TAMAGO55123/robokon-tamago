@@ -1,10 +1,7 @@
 import l293d
 import time as sleep
 
-l293d.cleanup()
 
-motor1 = l293d.DC(22,18,16)
-motor2 = l293d.DC(15,11,13)
 motor2data = l293d.DC(15,11,13)
 motor1data=l293d.DC(22,18,16)
 
