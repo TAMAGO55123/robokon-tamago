@@ -8,12 +8,12 @@ GPIO.setwarnings(False)
 motor1_1=23
 motor1_2=24
 enable1=25
-motor1_speed=50
+motor1_speed=30
 
 motor2_1=17
 motor2_2=27
 enable2=22
-motor2_speed=40
+motor2_speed=20
 
 button=21
 
