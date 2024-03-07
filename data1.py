@@ -57,27 +57,32 @@ def motorstop(motor):
         p2.ChangeDutyCycle(0)
 
 while True:
-
+    
+    print('1-1')
     motor(1,0,motor1_speed)
     sleep(7)
     motorstop(1)
     sleep(0.5)
 
+    print('1-2')
     motor(1,1,motor1_speed)
     sleep(7)
     motorstop(1)
     sleep(1)
 
+    print('2-1')
     motor(2,1,motor2_speed)
     sleep(3)
     motorstop(2)
     sleep(0.5)
 
+    print('2-2')
     motor(2,0,motor2_speed)
     sleep(3)
     motorstop(2)
     sleep(2)
 
+    print('1&2-1')
     motor(1,0,motor1_speed)
     motor(2,1,motor2_speed)
     sleep(7)
@@ -85,6 +90,7 @@ while True:
     motorstop(2)
     sleep(0.5)
 
+    print('1&2-2')
     motor(1,1,motor1_speed)
     motor(2,0,motor2_speed)
     sleep(7)
