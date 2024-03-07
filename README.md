@@ -1,1 +1,41 @@
 # robokon-tamago
+Raspberry pi と、モーターを使用した回転スクリプトです。
+
+L293Dを使用しています。
+
+# PIN一覧
+GPIO25>PIN1
+
+GPIO24>PIN2
+
+Motor1 GND>PIN3
+
+GND>PIN4
+
+GND>PIN5
+
+Motor2 PWM>PIN6
+
+GPIO23>PIN7
+
+5V Power>PIN8
+
+GPIO27>PIN9
+
+GPIO17>PIN10
+
+Motor2 PWM>PIN11
+
+GND>PIN12
+
+GND>PIN13
+
+Motor2 GND>PIN14
+
+GPIO22>PIN15
+
+5V Power>PIN16
+
+5V Power GND>GND
+
+Raspberry Pi GND>GND
