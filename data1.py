@@ -15,16 +15,12 @@ motor2_2=27
 enable2=22
 motor2_speed=40
 
-button=21
-
 GPIO.setup(motor1_2,GPIO.OUT)
 GPIO.setup(motor1_1,GPIO.OUT)
 GPIO.setup(motor2_1,GPIO.OUT)
 GPIO.setup(motor2_2,GPIO.OUT)
 GPIO.setup(enable1,GPIO.OUT)
 GPIO.setup(enable2,GPIO.OUT)
-
-GPIO.setup(button,GPIO.IN,pull_up_down=GPIO.PUD_DOWN)
 
 p1=GPIO.PWM(enable1,1000)
 p2=GPIO.PWM(enable2,1000)
