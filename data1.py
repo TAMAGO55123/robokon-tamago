@@ -2,6 +2,7 @@ import l293d
 import time as sleep
 
 l293d.cleanup()
+l293d.Config.pin_numbering = 'BOARD'
 
 motor2data = l293d.DC(15,11,13)
 motor1data=l293d.DC(22,18,16)
